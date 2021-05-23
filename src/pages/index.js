@@ -1,7 +1,16 @@
 import * as React from "react";
+import { Grid, Navbar } from "../components";
 
-const IndexPage = () => {
-  return <h1 className="text-secondary text-base font-headline">Hello</h1>;
+const HomePage = () => {
+  return (
+    <Grid>
+      <Navbar />
+      <div className="bg-green-200"></div>
+      <div className="bg-green-200"></div>
+      <div className="bg-green-200"></div>
+      <div className="bg-green-200"></div>
+    </Grid>
+  );
 };
 
-export default IndexPage;
+export default HomePage;
