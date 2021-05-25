@@ -3,10 +3,13 @@ import { Grid, Navbar } from "../components";
 
 const HomePage = () => {
   return (
-    <Navbar />
-    // <Grid/>
-
-    // </>
+    <Grid>
+      <Navbar />
+      {/* <div className="bg-green-300" />
+      <div className="bg-green-300" />
+      <div className="bg-green-300" />
+      <div className="bg-green-300" /> */}
+    </Grid>
   );
 };
 
