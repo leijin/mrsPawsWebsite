@@ -1,5 +1,6 @@
 import * as React from "react";
 import Container from "./Container";
+import MainNavBar from "./MainNav";
 
 const socialMediaIcons = [
   {
@@ -55,6 +56,7 @@ export function Navbar() {
           ))}
         </div>
       </Container>
+      <MainNavBar />
     </nav>
   );
 }
