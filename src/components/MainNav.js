@@ -17,22 +17,22 @@ import Container from "./Container";
 const mobileNavItems = [
   {
     name: "About",
-    href: "#about",
+    href: "/about",
     icon: AnnotationIcon,
   },
   {
     name: "Services",
-    href: "#Services",
+    href: "/services",
     icon: SparklesIcon,
   },
   {
     name: "FAQ",
-    href: "#FAQ",
+    href: "/faq",
     icon: QuestionMarkCircleIcon,
   },
   {
     name: "Contact",
-    href: "#Contact",
+    href: "/contact",
     icon: AtSymbolIcon,
   },
 ];
@@ -51,7 +51,7 @@ export default function MainNavBar() {
               <a href="#">
                 <span className="sr-only">Company Logo</span>
                 <img
-                  className="h-16 w-auto sm:h-10"
+                  className="h-16 w-auto"
                   src={Logo}
                   alt="Mrs Paws Pets Services Logo Without Script"
                 />
@@ -63,29 +63,7 @@ export default function MainNavBar() {
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
-            <Popover.Group as="nav" className="hidden md:flex space-x-10">
-              <Popover className="relative">
-                {({ open }) => (
-                  <>
-                    <Popover.Button
-                      className={classNames(
-                        open ? "text-gray-900" : "text-gray-500",
-                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-primary-dark"
-                      )}
-                    >
-                      <span>Solutions</span>
-                      <ChevronDownIcon
-                        className={classNames(
-                          open ? "text-gray-600" : "text-gray-400",
-                          "ml-2 h-5 w-5 group-hover:text-gray-500"
-                        )}
-                        aria-hidden="true"
-                      />
-                    </Popover.Button>
-                  </>
-                )}
-              </Popover>
-
+            <div>
               <a
                 href="#"
                 className="text-base font-medium text-gray-500 hover:text-gray-900"
@@ -98,36 +76,21 @@ export default function MainNavBar() {
               >
                 Docs
               </a>
-
-              <Popover className="relative">
-                {({ open }) => (
-                  <>
-                    <Popover.Button
-                      className={classNames(
-                        open ? "text-gray-900" : "text-gray-500",
-                        "group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                      )}
-                    >
-                      <span>More</span>
-                      <ChevronDownIcon
-                        className={classNames(
-                          open ? "text-gray-600" : "text-gray-400",
-                          "ml-2 h-5 w-5 group-hover:text-gray-500"
-                        )}
-                        aria-hidden="true"
-                      />
-                    </Popover.Button>
-                  </>
-                )}
-              </Popover>
-            </Popover.Group>
-            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <a
                 href="#"
-                className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
               >
-                Sign in
+                Pricing
               </a>
+              <a
+                href="#"
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Docs
+              </a>
+            </div>
+
+            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <a
                 href="#"
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"

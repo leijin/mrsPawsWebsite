@@ -21,6 +21,9 @@ module.exports = {
         primary: "Karla, sans-serif",
         heroHeadline: "Sue Ellen Francisco, sans-serif",
       },
+      height: {
+        18: "5 rem",
+      },
     },
   },
   variants: {
