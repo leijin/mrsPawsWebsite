@@ -32,26 +32,28 @@ const socialMediaIcons = [
 
 export function Navbar() {
   return (
-    <nav className="bg-primary-dark w-full h-10 md:h-12">
-      <div className="container flex justify-end items-center h-full">
-        <div className="flex">
-          {socialMediaIcons.map((item, index) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className={`${
-                index === 0 ? `px-2` : ""
-              } text-white hover:text-secondary`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span className="sr-only">{item.name}</span>
-              <item.icon
-                className="h-6 w-6 md:h-7 md:w-7 xl:h-8 xl:w-8"
-                aria-hidden="true"
-              />
-            </a>
-          ))}
+    <nav>
+      <div className="bg-primary-dark w-full h-10 md:h-12">
+        <div className="container flex justify-end items-center h-full">
+          <div className="flex">
+            {socialMediaIcons.map((item, index) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className={`${
+                  index === 0 ? `px-2` : ""
+                } text-white hover:text-secondary`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="sr-only">{item.name}</span>
+                <item.icon
+                  className="h-6 w-6 md:h-7 md:w-7 xl:h-8 xl:w-8"
+                  aria-hidden="true"
+                />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
       <MainNavBar />

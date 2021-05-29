@@ -1,14 +1,11 @@
 import * as React from "react";
-import { Grid, Navbar } from "../components";
+import { Navbar, HeroBanner } from "../components";
 
 const HomePage = () => {
   return (
     <>
       <Navbar />
-      {/* <div className="bg-green-300" />
-      <div className="bg-green-300" />
-      <div className="bg-green-300" />
-      <div className="bg-green-300" /> */}
+      <HeroBanner />
     </>
   );
 };
