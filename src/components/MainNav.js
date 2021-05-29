@@ -11,7 +11,9 @@ import {
 } from "@heroicons/react/outline";
 
 import Logo from "../images/logo.jpeg";
+import LogoText from "../images/logo_text.jpg";
 import Button from "./Button";
+import useWindowSize from "../utils/hooks/useWindowSize";
 
 const mobileNavItems = [
   {
@@ -37,17 +39,20 @@ const mobileNavItems = [
 ];
 
 export default function MainNavBar() {
+  const windowSize = useWindowSize();
+  const ResponsiveLogo = windowSize.width >= 1024 ? LogoText : Logo;
+
   return (
     <Popover className="relative bg-white">
       {({ open }) => (
         <>
-          <div className="container flex justify-between items-center py-2 md:justify-between">
+          <div className="container flex justify-between items-center py-2 md:justify-between md:py-3">
             <div className="flex justify-start md:flex-auto lg:w-0 lg:flex-1">
               <a href="#">
                 <span className="sr-only">Company Logo</span>
                 <img
-                  className="h-16 w-auto md:h-19"
-                  src={Logo}
+                  className="h-18 w-auto md:h-19 lg:h-20"
+                  src={ResponsiveLogo}
                   alt="Mrs Paws Pets Services Logo Without Script"
                 />
               </a>
@@ -61,33 +66,33 @@ export default function MainNavBar() {
             <div className="hidden md:flex md:flex-auto md:justify-around">
               <a
                 href="/about"
-                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900"
+                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900 lg:text-2xl"
               >
                 About
               </a>
               <a
                 href="/services"
-                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900"
+                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900 lg:text-2xl"
               >
                 Services
               </a>
               <a
                 href="/FAQ"
-                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900"
+                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900 lg:text-2xl"
               >
                 FAQ
               </a>
               <a
                 href="/contact"
-                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900"
+                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900 lg:text-2xl"
               >
                 Contact
               </a>
             </div>
 
-            <div className="hidden md:flex md:flex-auto items-center justify-end lg:w-0">
-              <Button href="#">Book A Walk</Button>
-            </div>
+            <span className="hidden md:flex md:flex-auto items-center justify-end lg:w-0">
+              <Button>Book A Walk</Button>
+            </span>
           </div>
 
           <Transition
@@ -110,13 +115,13 @@ export default function MainNavBar() {
                   <div className="flex items-center justify-between">
                     <div>
                       <img
-                        className="h-16 w-auto"
+                        className="h-18 w-auto"
                         src={Logo}
                         alt="Mrs Paws Pets Services Logo Without Script"
                       />
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-dark">
                         <span className="sr-only">Close menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
@@ -143,7 +148,7 @@ export default function MainNavBar() {
                 </div>
                 <div className="py-6 px-5">
                   <a
-                    href="#"
+                    href="https://www.timetopet.com/portal/mrspawspets"
                     className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-primary font-bold text-white bg-secondary hover:bg-secondary-dark"
                   >
                     Book a walk!
