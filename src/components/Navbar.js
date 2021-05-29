@@ -1,5 +1,4 @@
 import * as React from "react";
-import Container from "./Container";
 import MainNavBar from "./MainNav";
 
 const socialMediaIcons = [
@@ -33,9 +32,8 @@ const socialMediaIcons = [
 
 export function Navbar() {
   return (
-    <nav className="col-span-full h-10 md:h-12">
-      <div className="h-10 bg-primary-dark w-screen absolute left-0 z-[-1] md:h-12" />
-      <Container className="flex justify-end items-center">
+    <nav className="bg-primary-dark w-full h-10 md:h-12">
+      <div className="container flex justify-end items-center h-full">
         <div className="flex">
           {socialMediaIcons.map((item, index) => (
             <a
@@ -55,7 +53,7 @@ export function Navbar() {
             </a>
           ))}
         </div>
-      </Container>
+      </div>
       <MainNavBar />
     </nav>
   );

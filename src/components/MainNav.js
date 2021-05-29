@@ -9,10 +9,9 @@ import {
   QuestionMarkCircleIcon,
   AtSymbolIcon,
 } from "@heroicons/react/outline";
-import { ChevronDownIcon } from "@heroicons/react/solid";
 
 import Logo from "../images/logo.jpeg";
-import Container from "./Container";
+import Button from "./Button";
 
 const mobileNavItems = [
   {
@@ -27,7 +26,7 @@ const mobileNavItems = [
   },
   {
     name: "FAQ",
-    href: "/faq",
+    href: "/FAQ",
     icon: QuestionMarkCircleIcon,
   },
   {
@@ -37,21 +36,17 @@ const mobileNavItems = [
   },
 ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function MainNavBar() {
   return (
     <Popover className="relative bg-white">
       {({ open }) => (
         <>
-          <Container className="flex justify-between items-center py-2 sm:px-6 md:justify-start md:space-x-10">
-            <div className="flex justify-start lg:w-0 lg:flex-1">
+          <div className="container flex justify-between items-center py-2 md:justify-between">
+            <div className="flex justify-start md:flex-auto lg:w-0 lg:flex-1">
               <a href="#">
                 <span className="sr-only">Company Logo</span>
                 <img
-                  className="h-16 w-auto"
+                  className="h-16 w-auto md:h-19"
                   src={Logo}
                   alt="Mrs Paws Pets Services Logo Without Script"
                 />
@@ -63,42 +58,37 @@ export default function MainNavBar() {
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
-            <div>
+            <div className="hidden md:flex md:flex-auto md:justify-around">
               <a
-                href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                href="/about"
+                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900"
               >
-                Pricing
+                About
               </a>
               <a
-                href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                href="/services"
+                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900"
               >
-                Docs
+                Services
               </a>
               <a
-                href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                href="/FAQ"
+                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900"
               >
-                Pricing
+                FAQ
               </a>
               <a
-                href="#"
-                className="text-base font-medium text-gray-500 hover:text-gray-900"
+                href="/contact"
+                className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900"
               >
-                Docs
+                Contact
               </a>
             </div>
 
-            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <a
-                href="#"
-                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-              >
-                Sign up
-              </a>
+            <div className="hidden md:flex md:flex-auto items-center justify-end lg:w-0">
+              <Button href="#">Book A Walk</Button>
             </div>
-          </Container>
+          </div>
 
           <Transition
             show={open}

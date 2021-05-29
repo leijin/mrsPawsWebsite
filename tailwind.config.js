@@ -22,7 +22,17 @@ module.exports = {
         heroHeadline: "Sue Ellen Francisco, sans-serif",
       },
       height: {
-        18: "5 rem",
+        18: "5rem",
+        19: "6rem",
+        20: "7rem",
+        21: "8rem",
+        22: "9rem",
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+        },
       },
     },
   },

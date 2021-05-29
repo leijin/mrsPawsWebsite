@@ -17,7 +17,6 @@
   "dependencies": {
     "@headlessui/react": "^1.2.0",
     "@heroicons/react": "^1.0.1",
-    "@tailwindcss/jit": "^0.1.18",
     "autoprefixer": "^10.2.5",
     "gatsby": "^3.4.1",
     "gatsby-plugin-image": "^1.5.0",
