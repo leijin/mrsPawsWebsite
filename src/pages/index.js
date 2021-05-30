@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Navbar, HeroBanner } from "../components";
+import DogWalkder from "../assets/dog_walking.svg";
 
 const HomePage = () => {
   return (
@@ -17,7 +18,22 @@ const HomePage = () => {
           </h1>
         </div>
         {/* WELCOME TEXT AND IMAGE */}
-        <div className=""></div>
+        <div className="flex flex-col-reverse">
+          <div>
+            <p className="font-primary text-base">
+              Mrs paws is coming to town... to help you take the load off your
+              busy schedule!
+            </p>
+            <br />
+            <p className="font-primary text-base">
+              {" "}
+              We provide reliable, caring, and positive dog walking and/or pet
+              care experience for your special four-legged friend. Mrs Paws Pet
+              Services operates primarily within Burnaby and New Westminster.
+            </p>
+          </div>
+          <DogWalkder className="mb-4 " />
+        </div>
       </div>
     </>
   );
