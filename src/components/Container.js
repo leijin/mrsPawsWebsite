@@ -2,7 +2,11 @@ import * as React from "react";
 
 export function Container({ children, className }) {
   return (
-    <div className={`${className} h-full w-full px-2 xl:px-4`}>{children}</div>
+    <div
+      className={`${className} container max-w-7xl py-4 md:py-6 xl:py-8 2xl:py-12`}
+    >
+      {children}
+    </div>
   );
 }
 
