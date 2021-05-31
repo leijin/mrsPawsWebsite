@@ -4,7 +4,7 @@ import Container from "./Container";
 
 export function Intro() {
   return (
-    <Container>
+    <Container className="md:mb-[-5rem]">
       {/* WELCOME HEADLINE */}
       <div className="flex flex-col items-center">
         <h1 className="text-center font-headline text-4xl font-extrabold pr-10 text-gray-900 md:text-5xl md:max-w-sm md:pr-[4rem] md:pb-1 xl:text-6xl xl:max-w-lg xl:pr-[5rem] 2xl:text-[4.5rem] 2xl:max-w-3xl 2xl:pr-[8rem] ">
