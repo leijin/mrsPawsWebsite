@@ -6,3 +6,4 @@ export * from "./Intro";
 export * from "./ServicesGrid";
 export * from "./CTABar";
 export * from "./DogGrid";
+export * from "./Footer";

@@ -6,6 +6,7 @@ import {
   ServicesGrid,
   CTABar,
   DogGrid,
+  Footer,
 } from "../components";
 
 export function HomePage() {
@@ -17,6 +18,7 @@ export function HomePage() {
       <ServicesGrid />
       <CTABar />
       <DogGrid />
+      <Footer />
     </>
   );
 }
