@@ -1,5 +1,12 @@
 import * as React from "react";
-import { Navbar, HeroBanner, Intro, ServicesGrid, CTABar } from "../components";
+import {
+  Navbar,
+  HeroBanner,
+  Intro,
+  ServicesGrid,
+  CTABar,
+  DogGrid,
+} from "../components";
 
 export function HomePage() {
   return (
@@ -9,6 +16,7 @@ export function HomePage() {
       <Intro />
       <ServicesGrid />
       <CTABar />
+      <DogGrid />
     </>
   );
 }
