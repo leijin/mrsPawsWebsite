@@ -91,7 +91,7 @@ export default function MainNavBar() {
             </div>
 
             <span className="hidden md:flex md:flex-auto items-center justify-end lg:w-0">
-              <Button>Book A Walk</Button>
+              <Button>Book a Walk</Button>
             </span>
           </div>
 
