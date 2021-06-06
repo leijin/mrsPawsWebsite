@@ -48,7 +48,7 @@ export default function MainNavBar() {
         <>
           <div className="container flex justify-between items-center py-2 md:justify-between md:py-3">
             <div className="flex justify-start md:flex-auto lg:w-0 lg:flex-1">
-              <a href="#">
+              <a href="/">
                 <span className="sr-only">Company Logo</span>
                 <img
                   className="h-18 w-auto md:h-19 lg:h-20"
