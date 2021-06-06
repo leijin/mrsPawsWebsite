@@ -7,7 +7,7 @@ export function PageTitle({ title }) {
       <div className="flex flex-col">
         <h1
           style={{ fontVariant: "small-caps" }}
-          className="font-headline text-4xl font-semibold md:text-5xl 2xl:text-6xl"
+          className="text-gray-900 font-headline text-4xl font-semibold md:text-5xl 2xl:text-6xl"
         >
           {title}
         </h1>

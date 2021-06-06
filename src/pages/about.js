@@ -1,5 +1,11 @@
 import * as React from "react";
-import { Navbar, Footer, InsidePageBanner, PageTitle } from "../components";
+import {
+  Navbar,
+  Footer,
+  InsidePageBanner,
+  PageTitle,
+  AboutSection,
+} from "../components";
 
 export function About() {
   return (
@@ -7,6 +13,7 @@ export function About() {
       <Navbar />
       <InsidePageBanner />
       <PageTitle title="About" />
+      <AboutSection />
       <Footer />
     </>
   );

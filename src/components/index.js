@@ -9,3 +9,4 @@ export * from "./DogGrid";
 export * from "./Footer";
 export * from "./InsidePageBanner";
 export * from "./PageTitle";
+export * from "./AboutSection";
