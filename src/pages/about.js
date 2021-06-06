@@ -5,7 +5,7 @@ export function About() {
   return (
     <>
       <Navbar />
-      {/* <InsidePageBanner /> */}
+      <InsidePageBanner />
       <Footer />
     </>
   );
