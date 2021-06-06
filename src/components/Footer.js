@@ -43,11 +43,11 @@ export function Footer() {
     <footer className="bg-white">
       <Container className="2xl:pb-6">
         <nav
-          className="-mx-5 -my-2 flex flex-wrap justify-center"
+          className="mx-5 my-2 flex flex-wrap justify-center"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
-            <div key={item.name} className="px-5 py-2">
+            <div key={item.name} className="px-2 py-2">
               <a
                 href={item.href}
                 className="font-headline text-lg text-gray-600 hover:text-gray-900 2xl:text-xl"

@@ -7,3 +7,4 @@ export * from "./ServicesGrid";
 export * from "./CTABar";
 export * from "./DogGrid";
 export * from "./Footer";
+export * from "./InsidePageBanner";
