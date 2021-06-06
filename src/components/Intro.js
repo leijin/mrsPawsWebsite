@@ -17,12 +17,12 @@ export function Intro() {
       {/* WELCOME TEXT AND IMAGE */}
       <div className="flex flex-col-reverse items-center md:flex-row md:space-x-2 md:items-start">
         <div className="md:flex-1 md:flex md:flex-col md:pt-10 lg:justify-start lg:pt-20 2xl:pt-28">
-          <p className="text-gray-700 font-primary text-lg md:text-lg md:pb-1 lg:text-xl">
+          <p className="text-gray-700 font-primary text-lg md:pb-1 lg:text-xl">
             Mrs paws is coming to town... to help you take the load off your
             busy schedule!
           </p>
           <br />
-          <p className="text-gray-700 font-primary text-lg md:text-lg md:pt-2 lg:text-xl">
+          <p className="text-gray-700 font-primary text-lg md:pt-2 lg:text-xl">
             {" "}
             We provide reliable, caring, and positive dog walking and/or pet
             care experience for your special four-legged friend. Mrs Paws Pet

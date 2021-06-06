@@ -46,7 +46,7 @@ export default function MainNavBar() {
     <Popover className="relative bg-white z-10">
       {({ open }) => (
         <>
-          <div className="container flex justify-between items-center py-2 md:justify-between md:py-3">
+          <div className="container max-w-7xl flex justify-between items-center py-2 md:justify-between md:py-3">
             <div className="flex justify-start md:flex-auto lg:w-0 lg:flex-1">
               <a href="/">
                 <span className="sr-only">Company Logo</span>

@@ -3,7 +3,7 @@ import { Container } from "./index";
 
 export function PageTitle({ title }) {
   return (
-    <Container>
+    <Container className="xl:pb-2 2xl:pb-0 ">
       <div className="flex flex-col">
         <h1
           style={{ fontVariant: "small-caps" }}

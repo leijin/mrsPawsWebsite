@@ -34,7 +34,7 @@ export function Navbar() {
   return (
     <nav>
       <div className="bg-primary-dark w-full h-10 md:h-12">
-        <div className="container flex justify-end items-center h-full">
+        <div className="container max-w-7xl flex justify-end items-center h-full">
           <div className="flex">
             {socialMediaIcons.map((item, index) => (
               <a
