@@ -47,7 +47,7 @@ export function Footer() {
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
-            <div key={item.name} className="px-2 py-2">
+            <div key={item.name} className="px-2 lg:px-6 py-2">
               <a
                 href={item.href}
                 className="font-headline text-lg text-gray-600 hover:text-gray-900 2xl:text-xl"
