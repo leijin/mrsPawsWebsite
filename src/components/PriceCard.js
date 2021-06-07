@@ -22,14 +22,14 @@ export function PriceCard({
               </h3>
               {description.map(({ text, header }) => {
                 const headerText = header ? (
-                  <span className="font-primary font-bold text-gray-700">
+                  <span className="font-primary font-bold text-gray-600">
                     {header}
                   </span>
                 ) : null;
                 return (
                   <div className="mt-6">
                     {headerText}
-                    <p className="font-primary text-base text-gray-700">
+                    <p className="font-primary text-base text-gray-600">
                       {text}
                     </p>
                   </div>
@@ -58,7 +58,7 @@ export function PriceCard({
                           aria-hidden="true"
                         />
                       </div>
-                      <p className="font-primary ml-3 text-sm text-gray-700">
+                      <p className="font-primary ml-3 text-sm text-gray-600">
                         {feature}
                       </p>
                     </li>

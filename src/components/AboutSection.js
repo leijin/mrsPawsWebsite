@@ -14,11 +14,11 @@ export function AboutSection() {
               Hello my name is <span className="text-primary-dark">Maryam</span>
               , aka <span className="text-primary">Mrs Paws</span>
             </h2>
-            <p className="font-primary text-lg text-gray-700 lg:text-xl">
+            <p className="font-primary text-lg text-gray-600 lg:text-xl">
               I’m Burnaby and New Westminster’s friendliest neighborhood dog
               walker!{" "}
             </p>
-            <p className="font-primary text-lg text-gray-700 lg:text-xl">
+            <p className="font-primary text-lg text-gray-600 lg:text-xl">
               Over the past ten years I have worked with dogs in various
               capacities, including grooming salons, daycares, boarding kennels,
               and dog walking. Dogs have been my passion ever since I got my
@@ -26,12 +26,12 @@ export function AboutSection() {
               and build a career in marketing, I realized that I preferred my
               coworkers to have four legs instead of two!
             </p>
-            <p className="font-primary text-lg text-gray-700 lg:text-xl">
+            <p className="font-primary text-lg text-gray-600 lg:text-xl">
               I’m a proud dog mom of two pug mixes, Bella and Keeley, who are my
               entire world. I’m also a proud cat aunt of a sassy calico named
               Falafel, all of whom are featured in Mrs Paws’ logo.{" "}
             </p>
-            <p className="font-primary text-lg text-gray-700 lg:text-xl">
+            <p className="font-primary text-lg text-gray-600 lg:text-xl">
               As someone who is madly in love with my own dogs, I understand how
               important it is to find someone that you can trust when caring for
               your own fur child. My pledge to my clients is to always treat

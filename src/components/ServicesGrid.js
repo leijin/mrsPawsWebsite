@@ -77,7 +77,7 @@ export function ServicesGrid() {
                   {feature.name}
                 </p>
               </dt>
-              <dd className="font-primary mt-2 ml-16 text-base text-gray-700">
+              <dd className="font-primary mt-2 ml-16 text-base text-gray-600">
                 {feature.description}
               </dd>
             </div>
