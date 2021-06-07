@@ -7,7 +7,7 @@ export function FAQMainSection({ header, faqs }) {
       <div className="bg-white">
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           <div>
-            <h2 className="font-headline text-3xl font-bold text-gray-900 lg:text-3xl lg:text-4xl">
+            <h2 className="font-headline text-3xl font-bold text-gray-900 lg:text-4xl">
               {header}
             </h2>
           </div>

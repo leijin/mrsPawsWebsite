@@ -43,7 +43,7 @@ export default function MainNavBar() {
   const ResponsiveLogo = windowSize.width >= 1024 ? LogoText : Logo;
 
   return (
-    <Popover className="relative bg-white z-10">
+    <Popover className="relative bg-white z-20">
       {({ open }) => (
         <>
           <div className="container max-w-7xl flex justify-between items-center py-2 md:justify-between md:py-3">
