@@ -11,7 +11,7 @@ export function PriceCard({
   specialCondition = false,
 }) {
   return (
-    <div className="mt-1 bg-white pb-16 sm:mt-12 sm:pb-20 lg:pb-28">
+    <div className="mt-1 bg-white pb-16 sm:mt-8 sm:pb-10 lg:pb-16">
       <div className="relative">
         <div className="absolute inset-0 h-1/2" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,14 +22,14 @@ export function PriceCard({
               </h3>
               {description.map(({ text, header }) => {
                 const headerText = header ? (
-                  <span className="font-primary font-bold text-gray-500">
+                  <span className="font-primary font-bold text-gray-700">
                     {header}
                   </span>
                 ) : null;
                 return (
                   <div className="mt-6">
                     {headerText}
-                    <p className="font-primary text-base text-gray-500">
+                    <p className="font-primary text-base text-gray-700">
                       {text}
                     </p>
                   </div>

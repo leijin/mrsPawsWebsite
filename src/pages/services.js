@@ -132,7 +132,7 @@ export function Services() {
       <InsidePageBanner />
       <PageTitle title="Services" />
       <Container>
-        <p className="font-primary text-lg text-gray-700 lg:text-xl">
+        <p className="font-primary text-lg text-gray-700 lg:text-xl mb-3">
           Whether you are working from home and need someone to exercise your
           dog for you, or you are travelling and need someone to care for your
           pet(s), Mrs Paws Pet Services can help. We provide services such as
