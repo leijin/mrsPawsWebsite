@@ -90,7 +90,7 @@ const dogWalkingFAQs = [
   },
 ];
 
-export function FAQ() {
+function FAQ() {
   return (
     <>
       <Navbar />

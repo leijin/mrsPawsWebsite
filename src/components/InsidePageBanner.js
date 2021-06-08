@@ -7,6 +7,7 @@ export function InsidePageBanner() {
       <div className="w-full bg-primary bg-opacity-60 absolute h-32 md:h-48 lg:h-52 2xl:h-56 z-10" />
       <StaticImage
         src={"../images/inside_page_banner.jpg"}
+        alt=""
         placeholder="blurred"
         className="w-full object-center object-cover h-32 md:h-48 lg:h-52 2xl:h-56"
       />

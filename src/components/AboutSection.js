@@ -1,8 +1,6 @@
 import * as React from "react";
 import { Container } from "./index";
-import MaryamPortrait from "../images/maryam_portrait.jpg";
-import Keeley from "../images/keeley.jpg";
-import Bella from "../images/bella.jpg";
+import { StaticImage } from "gatsby-plugin-image";
 
 export function AboutSection() {
   return (
@@ -42,8 +40,10 @@ export function AboutSection() {
               and trustworthy. I am passionate about my pack.
             </p>
           </div>
-          <img
-            src={MaryamPortrait}
+          <StaticImage
+            src={"../images/maryam_portrait.jpg"}
+            placeholder="blurred"
+            alt="Portrait of Maryam aka Mrs Paws with her two dogs Keeley and Bella"
             className="border-[7px] border-primary rounded-xl md:max-h-[400px]"
           />
         </div>
@@ -52,8 +52,10 @@ export function AboutSection() {
             <h3 className="text-gray-900 font-headline font-semibold text-2xl max-w-xs md:max-w-full">
               Keeley
             </h3>
-            <img
-              src={Keeley}
+            <StaticImage
+              src={"../images/keeley.jpg"}
+              placeholder="blurred"
+              alt="Maryam's dog Keeley"
               className="w-40 h-40 border-4 border-primary rounded-full object-cover md:w-48 md:h-48"
             />
           </div>
@@ -61,8 +63,10 @@ export function AboutSection() {
             <h3 className="text-gray-900 font-headline font-semibold text-2xl max-w-xs md:max-w-full">
               Bella
             </h3>
-            <img
-              src={Bella}
+            <StaticImage
+              src={"../images/bella.jpg"}
+              placeholder="blurred"
+              alt="Maryam's dog Bella"
               className="w-40 h-40 border-4 border-primary rounded-full object-cover md:w-48 md:h-48"
             />
           </div>

@@ -125,7 +125,7 @@ const priceCards = [
   },
 ];
 
-export function Services() {
+function Services() {
   return (
     <>
       <Navbar />
@@ -150,6 +150,7 @@ export function Services() {
           specialCondition,
         }) => (
           <PriceCard
+            key={title}
             title={title}
             description={description}
             serviceFeatures={serviceFeatures}

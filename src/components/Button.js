@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export default function Button({
+export function Button({
   className,
   children,
   href = "https://www.timetopet.com/portal/mrspawspets",
@@ -14,3 +14,5 @@ export default function Button({
     </button>
   );
 }
+
+export default Button;

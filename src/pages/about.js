@@ -7,7 +7,7 @@ import {
   AboutSection,
 } from "../components";
 
-export function About() {
+function About() {
   return (
     <>
       <Navbar />

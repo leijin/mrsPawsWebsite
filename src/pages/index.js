@@ -9,7 +9,7 @@ import {
   Footer,
 } from "../components";
 
-export function HomePage() {
+function HomePage() {
   return (
     <>
       <Navbar />

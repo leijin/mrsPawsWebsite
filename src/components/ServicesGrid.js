@@ -48,7 +48,7 @@ export function ServicesGrid() {
   return (
     <Container>
       <div className="lg:text-center">
-        <h2 className="text-3xl lg:text-4xl font-extrabold tracking-tight font-headline text-gray-900 md:text-4xl">
+        <h2 className="text-3xl lg:text-4xl font-bold tracking-tight font-headline text-gray-900 md:text-4xl">
           Some of our Services
         </h2>
         <p className="font-primary text-lg mt-4 max-w-2xl text-gray-600 lg:mx-auto lg:text-xl">

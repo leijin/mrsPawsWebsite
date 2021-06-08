@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Navbar, Footer } from "../components";
 
-export function Contact() {
+function Contact() {
   return (
     <>
       <Navbar />

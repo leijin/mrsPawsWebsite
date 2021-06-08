@@ -11,7 +11,7 @@ export function HeroBanner() {
       </div>
       <StaticImage
         src={"../images/hero_banner.jpg"}
-        alt="Hero Banner"
+        alt="Hero banner on the home page. A golden retriever looking over the valley on top of the hill"
         placeholder="blurred"
         className="w-full object-center object-cover h-52 md:h-60 lg:h-[32rem] 2xl:h-[50rem]"
       />
