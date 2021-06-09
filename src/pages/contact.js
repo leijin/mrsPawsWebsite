@@ -5,6 +5,7 @@ import {
   faFacebookSquare,
   faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
+
 import {
   Navbar,
   Footer,
@@ -20,10 +21,11 @@ function Contact() {
       <InsidePageBanner />
       <PageTitle title="Contact" />
       <Container>
-        <div className="flex-col space-y-3">
+        <div className="flex flex-col space-y-5 items-center">
           <p className="font-primary text-lg text-gray-600 lg:text-xl mb-3">
             I am looking forward to speaking with you! The best way to get in
-            touch is either via social media or email listed below.
+            touch is either via social media or email listed below. We operate
+            operate primarily in Burnaby and New Westminster areas.
           </p>
           <div className="flex-col space-y-2">
             <div className="flex items-center space-x-2">
