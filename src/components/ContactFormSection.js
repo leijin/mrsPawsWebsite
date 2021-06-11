@@ -76,7 +76,12 @@ export function ContactFormSection() {
         </div>
         <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-16 lg:px-8 xl:pl-12">
           <div className="max-w-lg mx-auto lg:max-w-none">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+            <form
+              action="https://formsubmit.co/7e7ada03e85567ddf5b5345bf3cf1974"
+              method="POST"
+              method="POST"
+              className="grid grid-cols-1 gap-y-6"
+            >
               <div>
                 <label htmlFor="full_name" className="sr-only">
                   Full name
@@ -128,11 +133,15 @@ export function ContactFormSection() {
                   placeholder="Message"
                   defaultValue={""}
                 />
+                <input type="text" name="_honey" className="hidden" />
               </div>
               <div>
-                <Button type="submit" className="py-3 px-6">
+                <button
+                  type="submit"
+                  className="font-primary text-lg inline-flex justify-center py-3 px-6 border border-transparent shadow-sm font-medium rounded-md text-white bg-secondary hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-400"
+                >
                   Submit
-                </Button>
+                </button>
               </div>
             </form>
           </div>

@@ -51,7 +51,7 @@ export default function MainNavBar() {
               <a href="/">
                 <span className="sr-only">Company Logo</span>
                 <img
-                  className="h-18 w-auto md:h-19 lg:h-20"
+                  className="h-18 w-auto md:h-19 lg:h-20 transform-gpu"
                   src={ResponsiveLogo}
                   alt="Mrs Paws Pets Services Logo Without Script"
                 />
