@@ -40,7 +40,10 @@ const mobileNavItems = [
 
 export default function MainNavBar() {
   const windowSize = useWindowSize();
-  const ResponsiveLogo = windowSize.width >= 1024 ? LogoText : Logo;
+  let ResponsiveLogo;
+  React.useEffect(() => {
+    ResponsiveLogo = windowSize.width >= 1024 ? LogoText : Logo;
+  }, [windowSize.width]);
 
   return (
     <Popover className="relative bg-white z-20">

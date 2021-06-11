@@ -45,19 +45,19 @@ export function DogGrid() {
             layout="constrained"
             alt="A picture of one of the dogs from Mrs Paws walk or hike"
             image={getImage(firstImage[0].node.localImage)}
-            className="border-[3px] border-primary rounded-xl absolute h-full w-full object-cover"
+            className="border-[3px] border-primary rounded-xl absolute h-full w-full "
           />
         </div>
         {arrayOfInstaImages.map((image, index) => {
           return (
-            <div className="relative" key={index}>
+            <div className="relative pb-[100%]" key={index}>
               <GatsbyImage
                 layout="constrained"
                 alt="A picture of one of the dogs from Mrs Paws walk or hike"
                 image={getImage(image.node.localImage)}
                 className={`border-[3px] ${
                   index % 2 ? "border-primary-light" : "border-primary-dark"
-                } rounded-xl absolute h-full w-full object-cover`}
+                } rounded-xl absolute h-full w-full`}
               />
             </div>
           );
