@@ -1,5 +1,7 @@
 import * as React from "react";
 import "@fontsource/sue-ellen-francisco";
+import "@fontsource/spectral";
+import "@fontsource/karla";
 
 import {
   Navbar,

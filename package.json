@@ -16,6 +16,8 @@
     "preload-fonts": "gatsby-preload-fonts"
   },
   "dependencies": {
+    "@fontsource/karla": "^4.4.5",
+    "@fontsource/spectral": "^4.4.5",
     "@fontsource/sue-ellen-francisco": "^4.4.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
