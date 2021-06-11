@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
+import { StaticImage } from "gatsby-plugin-image";
 import {
   MenuIcon,
   XIcon,
@@ -10,7 +11,6 @@ import {
   AtSymbolIcon,
 } from "@heroicons/react/outline";
 
-import LogoText from "../images/logo_text.jpg";
 import Button from "./Button";
 
 const mobileNavItems = [
@@ -45,9 +45,9 @@ export default function MainNavBar() {
             <div className="flex justify-start md:flex-auto lg:w-0 lg:flex-1">
               <a href="/">
                 <span className="sr-only">Company Logo</span>
-                <img
-                  className="h-18 w-auto md:h-19 lg:h-20 transform-gpu"
-                  src={LogoText}
+                <StaticImage
+                  className="h-18 w-24 md:h-19 lg:h-20 transform-gpu"
+                  src={"../images/logo_text.jpg"}
                   alt="Mrs Paws Pets Services Logo Without Script"
                 />
               </a>
@@ -109,9 +109,9 @@ export default function MainNavBar() {
                 <div className="pt-5 pb-6 px-5">
                   <div className="flex items-center justify-between">
                     <div>
-                      <img
-                        className="h-18 w-auto"
-                        src={LogoText}
+                      <StaticImage
+                        className="h-18"
+                        src={"../images/logo_text.jpg"}
                         alt="Mrs Paws Pets Services Logo Without Script"
                       />
                     </div>
