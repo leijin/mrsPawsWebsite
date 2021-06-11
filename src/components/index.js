@@ -12,3 +12,4 @@ export * from "./PageTitle";
 export * from "./AboutSection";
 export * from "./PriceCard";
 export * from "./FAQMainSection";
+export * from "./ContactFormSection";
