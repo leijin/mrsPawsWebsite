@@ -13,7 +13,6 @@ import {
 import Logo from "../images/logo.jpeg";
 import LogoText from "../images/logo_text.jpg";
 import Button from "./Button";
-import useWindowSize from "../utils/hooks/useWindowSize";
 
 const mobileNavItems = [
   {
@@ -39,12 +38,6 @@ const mobileNavItems = [
 ];
 
 export default function MainNavBar() {
-  const windowSize = useWindowSize();
-  let ResponsiveLogo = LogoText;
-  React.useEffect(() => {
-    ResponsiveLogo = windowSize.width >= 1024 ? LogoText : Logo;
-  }, [windowSize.width]);
-
   return (
     <Popover className="relative bg-white z-20">
       {({ open }) => (
@@ -55,7 +48,7 @@ export default function MainNavBar() {
                 <span className="sr-only">Company Logo</span>
                 <img
                   className="h-18 w-auto md:h-19 lg:h-20 transform-gpu"
-                  src={ResponsiveLogo}
+                  src={LogoText}
                   alt="Mrs Paws Pets Services Logo Without Script"
                 />
               </a>
@@ -119,7 +112,7 @@ export default function MainNavBar() {
                     <div>
                       <img
                         className="h-18 w-auto"
-                        src={Logo}
+                        src={LogoText}
                         alt="Mrs Paws Pets Services Logo Without Script"
                       />
                     </div>
