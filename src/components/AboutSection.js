@@ -56,7 +56,7 @@ export function AboutSection() {
               src={"../images/keeley.jpg"}
               placeholder="blurred"
               alt="Maryam's dog Keeley"
-              className="w-40 h-40 border-4 border-primary rounded-full object-cover md:w-48 md:h-48"
+              className="w-40 h-40 border-4 border-primary rounded-full object-fit md:w-48 md:h-48"
             />
           </div>
           <div className="flex flex-col space-y-3 items-center">
@@ -67,7 +67,7 @@ export function AboutSection() {
               src={"../images/bella.jpg"}
               placeholder="blurred"
               alt="Maryam's dog Bella"
-              className="w-40 h-40 border-4 border-primary rounded-full object-cover md:w-48 md:h-48"
+              className="w-40 h-40 border-4 border-primary rounded-full object-fit md:w-48 md:h-48"
             />
           </div>
         </div>

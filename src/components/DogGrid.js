@@ -48,9 +48,8 @@ export function DogGrid() {
           />
         </div>
         {arrayOfInstaImages.map((image, index) => {
-          console.log(image);
           return (
-            <div className="relative pb-[100%]" key={index}>
+            <div className="relative" key={index}>
               <GatsbyImage
                 alt="A picture of one of the dogs from Mrs Paws walk or hike"
                 image={getImage(image.node.localImage)}
