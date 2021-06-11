@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Container } from "./index";
 import { StaticImage } from "gatsby-plugin-image";
-import { height } from "tailwindcss/defaultTheme";
 
 export function AboutSection() {
   return (
