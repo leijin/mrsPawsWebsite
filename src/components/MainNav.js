@@ -10,7 +10,6 @@ import {
   AtSymbolIcon,
 } from "@heroicons/react/outline";
 
-import Logo from "../images/logo.jpeg";
 import LogoText from "../images/logo_text.jpg";
 import Button from "./Button";
 
