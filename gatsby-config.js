@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "mrsPawsPetServicesWebsite",
@@ -38,8 +42,7 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token:
-          "IGQVJXMmZAXSS1fdGl4bDdncnRxdFVuZAE1DaWNFYWJTY2NyTHRuTXk5a2E4Q0Y2RFNGclg0RTRENV8yVlNYdXlMSXllbnNOTUtVVmM4b1RsRFFEOHdyZAU5zX2JEVjBFblY3c19tbXlXbVBnZA2JDb1pBVAZDZD",
+        access_token: process.env.INSTAGRAM_TOKEN,
       },
     },
   ],

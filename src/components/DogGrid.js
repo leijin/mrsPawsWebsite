@@ -1,25 +1,20 @@
 import * as React from "react";
 import Container from "./Container";
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
 import _get from "lodash/get";
 
 export function DogGrid() {
   const data = useStaticQuery(graphql`
     query InstagramPosts {
-      allInstagramContent {
+      allInstagramContent(limit: 7) {
         edges {
           node {
             id
             caption
             localImage {
               childImageSharp {
-                gatsbyImageData(
-                  layout: CONSTRAINED
-                  placeholder: BLURRED
-                  width: 500
-                  height: 500
-                )
+                gatsbyImageData
               }
             }
           }
@@ -28,10 +23,10 @@ export function DogGrid() {
     }
   `);
 
-  const arrayOfInstaImages = _get(data, "allInstagramContent.edges");
-  const image = getImage(arrayOfInstaImages[1].node.localImage);
+  const imageArray = _get(data, "allInstagramContent.edges");
+  const firstImage = imageArray.slice(0, 1);
+  const arrayOfInstaImages = imageArray.slice(1);
 
-  console.log(arrayOfInstaImages, image);
   return (
     <Container>
       <div className="lg:text-center">
@@ -48,84 +43,27 @@ export function DogGrid() {
         <div className="relative pb-[100%] col-span-2 md:row-span-2">
           <GatsbyImage
             alt="A picture of one of the dogs from Mrs Paws walk or hike"
-            image={image}
+            image={getImage(firstImage[0].node.localImage)}
             className="border-[3px] border-primary rounded-xl absolute h-full w-full object-cover"
           />
         </div>
-        <div className="relative pb-[100%]">
-          <StaticImage
-            placeholder="blurred"
-            alt="A picture of one of the dogs from Mrs Paws walk or hike"
-            src="https://source.unsplash.com/collection/1254279/800x600"
-            className="border-[3px] border-primary-light rounded-xl absolute h-full w-full object-cover"
-          />
-        </div>
-        <div className="relative pb-[100%]">
-          <StaticImage
-            placeholder="blurred"
-            alt="A picture of one of the dogs from Mrs Paws walk or hike"
-            src="https://source.unsplash.com/collection/1254279/800x600"
-            className="border-[3px] border-primary-light rounded-xl absolute h-full w-full object-cover"
-          />
-        </div>
-        <div className="relative pb-[100%]">
-          <StaticImage
-            placeholder="blurred"
-            alt="A picture of one of the dogs from Mrs Paws walk or hike"
-            src="https://source.unsplash.com/collection/1254279/800x600"
-            className="border-[3px] border-primary rounded-xl absolute h-full w-full object-cover"
-          />
-        </div>
-        <div className="relative pb-[100%]">
-          <StaticImage
-            placeholder="blurred"
-            alt="A picture of one of the dogs from Mrs Paws walk or hike"
-            src="https://source.unsplash.com/collection/1254279/800x600"
-            className="border-[3px] border-primary rounded-xl absolute h-full w-full object-cover"
-          />
-        </div>
-        <div className="relative pb-[100%]">
-          <StaticImage
-            placeholder="blurred"
-            alt="A picture of one of the dogs from Mrs Paws walk or hike"
-            src="https://source.unsplash.com/collection/1254279/800x600"
-            className="border-[3px] border-primary-dark rounded-xl absolute h-full w-full object-cover"
-          />
-        </div>
-        <div className="relative pb-[100%]">
-          <StaticImage
-            placeholder="blurred"
-            alt="A picture of one of the dogs from Mrs Paws walk or hike"
-            src="https://source.unsplash.com/collection/1254279/800x600"
-            className="border-[3px] border-primary-dark rounded-xl absolute h-full w-full object-cover"
-          />
-        </div>
+        {arrayOfInstaImages.map((image, index) => {
+          console.log(image);
+          return (
+            <div className="relative pb-[100%]" key={index}>
+              <GatsbyImage
+                alt="A picture of one of the dogs from Mrs Paws walk or hike"
+                image={getImage(image.node.localImage)}
+                className={`border-[3px] ${
+                  index % 2 ? "border-primary-light" : "border-primary-dark"
+                } rounded-xl absolute h-full w-full object-cover`}
+              />
+            </div>
+          );
+        })}
       </div>
     </Container>
   );
 }
-
-// export const query = graphql`
-//   query InstagramPosts {
-//     allInstagramContent {
-//       edges {
-//         node {
-//           id
-//           caption
-//           localImage {
-//             childImageSharp {
-//               gatsbyImageData(
-//                 layout: CONSTRAINED
-//                 placeholder: BLURRED
-//                 width: 500
-//                 height: 500
-//               )
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
 
 export default DogGrid;
