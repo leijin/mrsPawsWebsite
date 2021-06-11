@@ -16,6 +16,7 @@
     "preload-fonts": "gatsby-preload-fonts"
   },
   "dependencies": {
+    "@fontsource/sue-ellen-francisco": "^4.4.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
@@ -31,7 +32,6 @@
     "gatsby-plugin-preload-fonts": "^2.7.1",
     "gatsby-plugin-react-svg": "^3.0.1",
     "gatsby-plugin-sharp": "^3.5.0",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^3.5.0",
     "gatsby-source-instagram-all": "^4.2.0",
     "gatsby-transformer-sharp": "^3.5.0",

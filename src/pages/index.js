@@ -1,4 +1,6 @@
 import * as React from "react";
+import "@fontsource/sue-ellen-francisco";
+
 import {
   Navbar,
   HeroBanner,

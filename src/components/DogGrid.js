@@ -42,6 +42,7 @@ export function DogGrid() {
       <div className="grid grid-cols-2 gap-2 mt-10 md:grid-rows-2 md:grid-cols-5">
         <div className="relative pb-[100%] col-span-2 md:row-span-2">
           <GatsbyImage
+            layout="constrained"
             alt="A picture of one of the dogs from Mrs Paws walk or hike"
             image={getImage(firstImage[0].node.localImage)}
             className="border-[3px] border-primary rounded-xl absolute h-full w-full object-cover"
@@ -51,9 +52,9 @@ export function DogGrid() {
           return (
             <div className="relative" key={index}>
               <GatsbyImage
+                layout="constrained"
                 alt="A picture of one of the dogs from Mrs Paws walk or hike"
                 image={getImage(image.node.localImage)}
-                imgStyle={{ position: "absolute" }}
                 className={`border-[3px] ${
                   index % 2 ? "border-primary-light" : "border-primary-dark"
                 } rounded-xl absolute h-full w-full object-cover`}

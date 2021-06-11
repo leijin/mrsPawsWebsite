@@ -21,18 +21,6 @@ module.exports = {
       __key: "images",
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: [
-            "Spectral:300,400,500,600,700,800",
-            "Karla",
-            "Sue Ellen Francisco",
-          ],
-        },
-      },
-    },
-    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
