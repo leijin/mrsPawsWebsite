@@ -40,7 +40,7 @@ const mobileNavItems = [
 
 export default function MainNavBar() {
   const windowSize = useWindowSize();
-  let ResponsiveLogo;
+  let ResponsiveLogo = LogoText;
   React.useEffect(() => {
     ResponsiveLogo = windowSize.width >= 1024 ? LogoText : Logo;
   }, [windowSize.width]);
