@@ -53,7 +53,7 @@ export function DogGrid() {
               <GatsbyImage
                 alt="A picture of one of the dogs from Mrs Paws walk or hike"
                 image={getImage(image.node.localImage)}
-                imgStyle={{ display: "block" }}
+                imgStyle={{ position: "absolute" }}
                 className={`border-[3px] ${
                   index % 2 ? "border-primary-light" : "border-primary-dark"
                 } rounded-xl absolute h-full w-full object-cover`}
