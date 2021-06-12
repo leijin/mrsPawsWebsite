@@ -44,7 +44,7 @@ export function AboutSection() {
             src={"../images/maryam_portrait.jpg"}
             placeholder="blurred"
             alt="Portrait of Maryam aka Mrs Paws with her two dogs Keeley and Bella"
-            className="border-[7px] border-primary rounded-xl md:max-h-[400px]"
+            className="border-[7px] min-w-[250px] border-primary rounded-xl md:max-h-[400px]"
           />
         </div>
         <div className="flex max-w-full justify-around md:justify-center md:space-x-14">

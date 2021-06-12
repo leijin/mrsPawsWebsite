@@ -60,7 +60,7 @@ export default function MainNavBar() {
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
-            <div className="hidden md:flex md:justify-around md:space-x-5 lg:space-x-16">
+            <div className="hidden md:flex md:justify-around md:space-x-7 lg:space-x-16">
               <a
                 href="/about"
                 className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900 lg:text-2xl"
