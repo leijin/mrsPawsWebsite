@@ -7,11 +7,16 @@ import _get from "lodash/get";
 export function DogGrid() {
   const data = useStaticQuery(graphql`
     query InstagramPosts {
-      allInstagramContent(limit: 7) {
+      allInstagramContent(
+        limit: 7
+        filter: { media_type: { in: ["IMAGE", "CAROUSEL_ALBUM"] } }
+      ) {
         edges {
           node {
             id
-            caption
+            media_id
+            media_type
+            permalink
             localImage {
               childImageSharp {
                 gatsbyImageData
@@ -24,9 +29,9 @@ export function DogGrid() {
   `);
 
   const imageArray = _get(data, "allInstagramContent.edges");
-  const firstImage = imageArray.slice(0, 1);
+  const firstImage = imageArray.slice(0, 1)[0];
   const arrayOfInstaImages = imageArray.slice(1);
-
+  console.log(firstImage);
   return (
     <Container>
       <div className="lg:text-center">
@@ -41,24 +46,28 @@ export function DogGrid() {
       </div>
       <div className="grid grid-cols-2 gap-2 mt-10 md:grid-rows-2 md:grid-cols-5 max-h-full lg:max-h-[500px]">
         <div className="relative pb-[100%] mb-2 col-span-2 md:row-span-2">
-          <GatsbyImage
-            layout="constrained"
-            alt="A picture of one of the dogs from Mrs Paws walk or hike"
-            image={getImage(firstImage[0].node.localImage)}
-            className="border-[3px] border-primary rounded-xl absolute h-full w-full "
-          />
+          <a href={firstImage.node.permalink} target="_blank">
+            <GatsbyImage
+              layout="constrained"
+              alt="A picture of one of the dogs from Mrs Paws walk or hike"
+              image={getImage(firstImage.node.localImage)}
+              className="border-[3px] border-primary rounded-xl absolute h-full w-full "
+            />
+          </a>
         </div>
         {arrayOfInstaImages.map((image, index) => {
           return (
             <div className="relative pb-[100%]" key={index}>
-              <GatsbyImage
-                layout="constrained"
-                alt="A picture of one of the dogs from Mrs Paws walk or hike"
-                image={getImage(image.node.localImage)}
-                className={`border-[4px] ${
-                  index % 2 ? "border-primary-light" : "border-primary-dark"
-                } rounded-lg absolute h-full w-full`}
-              />
+              <a href={image.node.permalink} target="_blank">
+                <GatsbyImage
+                  layout="constrained"
+                  alt="A picture of one of the dogs from Mrs Paws walk or hike"
+                  image={getImage(image.node.localImage)}
+                  className={`border-[4px] ${
+                    index % 2 ? "border-primary-light" : "border-primary-dark"
+                  } rounded-lg absolute h-full w-full`}
+                />
+              </a>
             </div>
           );
         })}
