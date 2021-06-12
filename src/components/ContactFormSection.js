@@ -6,8 +6,6 @@ import {
   faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
-import Button from "./Button";
-
 export function ContactFormSection() {
   return (
     <div className="relative bg-white">
@@ -17,7 +15,7 @@ export function ContactFormSection() {
             <p className="leading-6 font-primary pr-4 text-lg text-gray-600 lg:text-xl lg:pb-8">
               I am looking forward to speaking with you! The best way to get in
               touch is either via social media, email or this form right here.
-              We operate operate primarily in Burnaby and New Westminster areas.
+              We operate primarily in Burnaby and New Westminster areas.
             </p>
             <dl className="mt-4 text-base text-gray-500 flex flex-col space-y-2">
               <dt className="sr-only">Facebook</dt>
@@ -78,7 +76,6 @@ export function ContactFormSection() {
           <div className="max-w-lg mx-auto lg:max-w-none">
             <form
               action="https://formsubmit.co/7e7ada03e85567ddf5b5345bf3cf1974"
-              method="POST"
               method="POST"
               className="grid grid-cols-1 gap-y-6"
             >

@@ -42,11 +42,12 @@ export default function MainNavBar() {
       {({ open }) => (
         <>
           <div className="container max-w-7xl flex justify-between items-center py-2 md:justify-between md:py-3">
-            <div className="flex justify-start md:flex-auto lg:w-0 lg:flex-1">
+            <div className="flex  justify-start md:flex-1 md:w-0 lg:flex-1">
               <a href="/">
                 <span className="sr-only">Company Logo</span>
                 <StaticImage
-                  className="h-18 w-24 md:h-19 lg:h-20 transform-gpu"
+                  className="h-18 w-auto md:h-19 lg:h-20 transform-gpu"
+                  imgClassName="h-18 w-auto md:h-19 lg:h-20 transform-gpu"
                   src={"../images/logo_text.jpg"}
                   alt="Mrs Paws Pets Services Logo Without Script"
                 />
@@ -58,7 +59,7 @@ export default function MainNavBar() {
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
-            <div className="hidden md:flex md:flex-auto md:justify-around">
+            <div className="hidden md:flex md:flex-grow-[1] md:justify-around">
               <a
                 href="/about"
                 className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900 lg:text-2xl"
@@ -85,7 +86,7 @@ export default function MainNavBar() {
               </a>
             </div>
 
-            <span className="hidden md:flex md:flex-auto items-center justify-end lg:w-0">
+            <span className="hidden md:flex md:flex-1 items-center justify-end lg:w-0">
               <Button>Book a Walk</Button>
             </span>
           </div>
@@ -110,7 +111,8 @@ export default function MainNavBar() {
                   <div className="flex items-center justify-between">
                     <div>
                       <StaticImage
-                        className="h-18"
+                        imgClassName="h-18 w-auto"
+                        className="h-18 w-auto"
                         src={"../images/logo_text.jpg"}
                         alt="Mrs Paws Pets Services Logo Without Script"
                       />
