@@ -40,7 +40,7 @@ export function DogGrid() {
         </p>
       </div>
       <div className="grid grid-cols-2 gap-2 mt-10 md:grid-rows-2 md:grid-cols-5 max-h-full lg:max-h-[500px]">
-        <div className="relative col-span-2 md:row-span-2">
+        <div className="relative pb-[100%] mb-2 col-span-2 md:row-span-2">
           <GatsbyImage
             layout="constrained"
             alt="A picture of one of the dogs from Mrs Paws walk or hike"
@@ -50,7 +50,7 @@ export function DogGrid() {
         </div>
         {arrayOfInstaImages.map((image, index) => {
           return (
-            <div className="relative pb-[100%]  " key={index}>
+            <div className="relative pb-[100%]" key={index}>
               <GatsbyImage
                 layout="constrained"
                 alt="A picture of one of the dogs from Mrs Paws walk or hike"
