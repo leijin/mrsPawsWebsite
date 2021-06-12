@@ -48,6 +48,7 @@ export default function MainNavBar() {
                 <StaticImage
                   className="h-18 w-auto md:h-19 lg:h-20 transform-gpu"
                   imgClassName="h-18 w-auto md:h-19 lg:h-20 transform-gpu"
+                  loading="eager"
                   src={"../images/logo_text.jpg"}
                   alt="Mrs Paws Pets Services Logo Without Script"
                 />
@@ -113,6 +114,7 @@ export default function MainNavBar() {
                       <StaticImage
                         imgClassName="h-18 w-auto"
                         className="h-18 w-auto"
+                        loading="eager"
                         src={"../images/logo_text.jpg"}
                         alt="Mrs Paws Pets Services Logo Without Script"
                       />
