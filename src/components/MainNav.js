@@ -47,6 +47,7 @@ export default function MainNavBar() {
               <StaticImage
                 className="h-18 w-24 md:w-32 md:h-19 lg:h-20"
                 imgClassName="transform-gpu"
+                imgStyle={{ imageRendering: "-webkit-optimize-contrast" }}
                 placeholder="tracedSVG"
                 objectFit="contain"
                 loading="eager"
@@ -114,6 +115,9 @@ export default function MainNavBar() {
                       <StaticImage
                         className="h-18 w-24"
                         imgClassName="transform-gpu"
+                        imgStyle={{
+                          imageRendering: "-webkit-optimize-contrast",
+                        }}
                         objectFit="contain"
                         placeholder="tracedSVG"
                         loading="eager"
