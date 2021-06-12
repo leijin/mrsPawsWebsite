@@ -42,25 +42,25 @@ export default function MainNavBar() {
       {({ open }) => (
         <>
           <div className="container max-w-7xl flex justify-between items-center py-2 md:justify-between md:py-3">
-            <div className="flex  justify-start md:flex-1 md:w-0 lg:flex-1">
-              <a href="/">
-                <span className="sr-only">Company Logo</span>
-                <StaticImage
-                  className="h-18 w-auto md:h-19 lg:h-20 transform-gpu"
-                  imgClassName="h-18 w-auto md:h-19 lg:h-20 transform-gpu"
-                  loading="eager"
-                  src={"../images/logo_text.jpg"}
-                  alt="Mrs Paws Pets Services Logo Without Script"
-                />
-              </a>
-            </div>
+            <a href="/">
+              <span className="sr-only">Company Logo</span>
+              <StaticImage
+                className="h-18 w-24 md:w-32 md:h-19 lg:h-20"
+                imgClassName="transform-gpu"
+                placeholder="tracedSVG"
+                objectFit="contain"
+                loading="eager"
+                src={"../images/logo_text.jpg"}
+                alt="Mrs Paws Pets Services Logo Without Script"
+              />
+            </a>
             <div className="-mr-2 -my-2 md:hidden">
               <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-dark">
                 <span className="sr-only">Open menu</span>
                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
-            <div className="hidden md:flex md:flex-grow-[1] md:justify-around">
+            <div className="hidden md:flex md:justify-around md:space-x-5 lg:space-x-16">
               <a
                 href="/about"
                 className="text-xl font-headline font-medium text-gray-600 hover:text-gray-900 lg:text-2xl"
@@ -87,7 +87,7 @@ export default function MainNavBar() {
               </a>
             </div>
 
-            <span className="hidden md:flex md:flex-1 items-center justify-end lg:w-0">
+            <span className="hidden md:flex items-center justify-end">
               <Button>Book a Walk</Button>
             </span>
           </div>
@@ -112,8 +112,10 @@ export default function MainNavBar() {
                   <div className="flex items-center justify-between">
                     <div>
                       <StaticImage
-                        imgClassName="h-18 w-auto"
-                        className="h-18 w-auto"
+                        className="h-18 w-24"
+                        imgClassName="transform-gpu"
+                        objectFit="contain"
+                        placeholder="tracedSVG"
                         loading="eager"
                         src={"../images/logo_text.jpg"}
                         alt="Mrs Paws Pets Services Logo Without Script"
