@@ -43,7 +43,7 @@ const priceCards = [
       "Pickup and dropoff",
     ],
     ctaText: "Book Your Walk",
-    prices: ["15 Minutes: $20", "30 Minutes: $25", "1 Hour: $35"],
+    prices: ["15 Minutes: $20", "30 Minutes: $35", "1 Hour: $45"],
     specialCondition: "*2nd dog is 50% off",
   },
   {
