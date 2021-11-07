@@ -23,10 +23,7 @@ const priceCards = [
     ],
     ctaText: "Book Your Hike",
     prices: [
-      "Drop In: $30",
-      "1-2 Per Week: $28 (each)",
-      "2-3 Per Week: $27 (each)",
-      "4+ Per Week: $26 (each)",
+      "Drop In: $30"
     ],
     specialCondition: "*2nd dog is 50% off",
   },
