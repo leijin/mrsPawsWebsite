@@ -28,22 +28,6 @@ const priceCards = [
     specialCondition: "*2nd dog is 50% off",
   },
   {
-    title: "Private Walk",
-    description: [
-      {
-        text: "Ideal for young puppies, senior dogs, and dogs that prefer to walk solo. On leash unless otherwise requested by the owner",
-      },
-    ],
-
-    serviceFeatures: [
-      "Can range from 15 minutes to 1 hour",
-      "Pickup and dropoff",
-    ],
-    ctaText: "Book Your Walk",
-    prices: ["15 Minutes: $20", "30 Minutes: $35", "1 Hour: $45"],
-    specialCondition: "*2nd dog is 50% off",
-  },
-  {
     title: "Boarding",
     description: [
       {
@@ -62,47 +46,7 @@ const priceCards = [
       "Soft bedding; crates, if necessary",
     ],
     ctaText: "Book Boarding",
-    prices: ["Per Night: $50"],
-  },
-  {
-    title: "Dog Sitting",
-    description: [
-      {
-        text: "In home daycare, ranging from minimum 2 hours to maximum 12 (after 12 hours the service is considered to be boarding). Usually done in my home",
-      },
-      {
-        text: "* Please note that pick up/drop off is not included unless a walk has already been scheduled for that day",
-      },
-    ],
-    serviceFeatures: [
-      "Minimum of one walk, depending on the length of stay",
-      "Feeding (if required) and providing fresh water",
-      "Play time and an abundance of cuddles",
-      "Potty breaks as necessary",
-      "Administering medication if required",
-    ],
-    ctaText: "Book Dog Sitting",
-    prices: ["Starts at $20"],
-  },
-  {
-    title: "Cat Sitting",
-    description: [
-      {
-        text: "Because cats are territorial and sensitive to changes in their environment, cat sitting will always be done in the comfort of your own home. This is to minimize stress on your cat, as well as help nurture a bond between myself and your cat.",
-      },
-    ],
-    serviceFeatures: [
-      "Minimum of 2 visits a day, morning and evening",
-      "Feeding and providing fresh water",
-      "Cuddles and playtime",
-      "Photo/Video updates",
-      "Maintaining a fresh and clean litter box ",
-      "Administering medication if required",
-      "Watering your plants if necessary",
-      "Collecting your mail and putting out the trash/recycling if necessary",
-    ],
-    ctaText: "Book Cat Sitting",
-    prices: ["Per day: $50"],
+    prices: ["Per Night: $60"],
   },
   {
     title: "Miscellaneous",
